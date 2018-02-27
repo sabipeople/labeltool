@@ -862,8 +862,14 @@ class MainWindow(QMainWindow, WindowMixin):
             image = self.canvas.getLabelImage()
             if image:
                 path, fname = os.path.split(self.filename)
+                if not os.path.exists(os.path.join(path,"label")): 
+                    os.mkdir(os.path.join(path,"label"))
+                
                 fname="label/label_"+fname.replace("json","png")
                 image.save(os.path.join(path,fname),"png")
+                
+                src_filename="label/"+os.path.split(self.filename)[1]
+                self.image.save(os.path.join(path,src_filename.replace("json","png")),"png")
                 #table view update
                 row_idx, key = self.getCurrentData()
                 self.labelFileDict[key]=self.filename.replace("png", "json")
