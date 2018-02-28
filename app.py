@@ -842,11 +842,15 @@ class MainWindow(QMainWindow, WindowMixin):
 	
     def makeTableViewData(self):
         table_data=[]
-        for key in self.imageFileDict.keys():
-            if key in self.labelFileDict.keys():
+        if len(self.imageFileDict.keys())!=0:
+            for key in self.imageFileDict.keys():
+                if key in self.labelFileDict.keys():
+                    table_data.append([key,'Yes'])
+                else:
+                    table_data.append([key, 'no'])
+        else:
+            for key in self.labelFileDict.keys():
                 table_data.append([key,'Yes'])
-            else:
-                table_data.append([key, 'no'])
         return table_data
 
     def saveFile(self, _value=False):
