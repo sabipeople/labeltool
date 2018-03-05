@@ -1,7 +1,12 @@
 this program is modified version of labelme program 
 you can find the original program here <https://github.com/wkentaro/labelme>
 
-you need pyqt5 and python 3.6 to run this modified labelme(i only have tested it on these setting, ubuntu and windows 7)
+you need pyqt5 and python 3.6 to run this modified labelme(i only have tested it on these setting, ubuntu and windows 7(32bit))
+env setting
+> conda env create -f labelme.yml
+
+after set conda env run
+>activate label
 
 to run the program type:
 >python app.py
