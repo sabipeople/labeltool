@@ -1,0 +1,24 @@
+name: label
+channels:
+- anaconda
+- defaults
+dependencies:
+- ca-certificates=2017.08.26=h94faf87_0
+- icu=57.1=vc14_0
+- jpeg=9b=vc14h39a59fb_1
+- libpng=1.6.32=vc14hf267d31_3
+- openssl=1.0.2l=vc14hb3c0c5f_5
+- pyqt=5.6.0=py36h13ac1a8_5
+- qt=5.6.2=vc14_6
+- sip=4.18.1=py36h0e39f04_2
+- zlib=1.2.11=vc14h902601c_1
+- certifi=2016.2.28=py36_0
+- pip=9.0.1=py36_1
+- python=3.6.2=0
+- setuptools=36.4.0=py36_1
+- six=1.10.0=py36_0
+- vc=14=0
+- vs2015_runtime=14.0.25420=0
+- wheel=0.29.0=py36_0
+- wincertstore=0.2=py36_0
+prefix: C:\Users\Administrator\AppData\Local\Continuum\Anaconda3\envs\labelme
